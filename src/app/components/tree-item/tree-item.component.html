@@ -1,0 +1,8 @@
+<li>
+  Id: {{ treeItem.Id }}, Name: {{ treeItem.Name }}
+  <ul *ngIf="treeItem.Expanded">
+    <ng-container *ngFor="let item of treeItem.ChildrenIds">
+      <app-tree-item [treeItem]="item"></app-tree-item>
+    </ng-container>
+  </ul>
+</li>
