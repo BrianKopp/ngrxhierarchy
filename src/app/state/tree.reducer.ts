@@ -81,7 +81,7 @@ export function TreeReducer(state: TreeState = DefaultTreeState, action: Action)
           ...existingItems[idToFetch],
           ChildrenLoading: true,
           ChildrenLoaded: true,
-          ChildrenItems: [],
+          ChildrenItems: null,
           Expanded: false
         };
       }
